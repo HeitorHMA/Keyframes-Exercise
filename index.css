@@ -1,32 +1,25 @@
-#hoverButton{
-    background-color: rgb(0, 129, 235);
-    color: white;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 0;
-    border-radius: 7px;
-    width: 100px;
-    height: 100px;
-    transition: width 1s, height 1s;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    
-    
-}
-#center{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
+#transition-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#hoverButton:hover{
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    line-height: 200px
-    
-}
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  button{
+    transition: transform .5s; 
+  }
+  button:hover{
+    transform: scale(1.3);
+  }
